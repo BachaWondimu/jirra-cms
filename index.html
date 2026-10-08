@@ -1,11 +1,374 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>JIRRA — We Are Here</title><link rel='stylesheet' href='styles.css'></head><body>
-<header><a class='brand' href='#'>JIRRA</a><nav><a href='#story'>Story</a><a href='#culture'>Culture</a><a href='#football'>Football</a><a href='#latest'>Latest</a><a href='#connect'>Connect</a><a href='admin.html'>Admin</a></nav></header>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JIRRA — We Are Here</title>
+    <meta name="description"
+          content="JIRRA — DMV Oromo culture, community, stories and football.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="intro" id="intro">
+    <div class="intro-inner">
+        <span class="intro-small">DMV / OROMO COMMUNITY</span>
+        <div class="intro-logo">JIRRA</div>
+        <div class="intro-line"></div>
+        <span class="intro-small">WE ARE HERE</span>
+    </div>
+</div>
+
+<header class="site-header">
+    <a class="brand" href="#">JIRRA</a>
+
+    <nav>
+        <a href="#story">Story</a>
+        <a href="#culture">Culture</a>
+        <a href="#football">Football</a>
+        <a href="#latest">Latest</a>
+        <a href="#connect">Connect</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+
+
 <main>
-<section class='hero'><img src='assets/hero.jpg' alt='JIRRA community gathering'><div class='shade'></div><div class='hero-copy'><p class='eyebrow'>DMV • OROMO COMMUNITY</p><h1>WE ARE<br>HERE.</h1><p>Culture. Community. Football.</p><a class='btn' href='#story'>Our story ↓</a></div></section>
-<section id='story' class='statement'><p class='eyebrow red'>JIRRA / WE ARE HERE</p><h2>More than a name.<br><span>We celebrate our culture.<br>We build community.<br>We carry it forward.</span></h2><p class='lede'>JIRRA is a DMV-based Oromo community bringing people together through culture, friendship, celebration and football.</p></section>
-<section class='pillars'><article><b>01</b><h3>CULTURE</h3><p>Showing up together for Irreechaa and celebrating the traditions that connect generations.</p></article><article><b>02</b><h3>COMMUNITY</h3><p>A place to belong, build friendships, create memories and strengthen the Oromo community in the DMV.</p></article><article><b>03</b><h3>FOOTBALL</h3><p>JIRRA FC brings the same identity and energy onto the pitch, including tournament competition and OSFNA events.</p></article></section>
-<section id='culture' class='culture'><div class='section-head'><p class='eyebrow'>ROOTED IN CULTURE</p><h2>IRREECHAA<br>TOGETHER.</h2></div><div class='gallery'><img src='assets/culture-1.jpg'><img src='assets/culture-2.jpg'><img src='assets/culture-3.jpg'><img src='assets/culture-4.jpg'></div></section>
-<section id='football' class='football'><p class='eyebrow red'>JIRRA FC</p><h2>FROM THE DMV<br>TO THE PITCH.</h2><p>Fixtures, tournament appearances, results and team stories will live here.</p><div class='match'><span>NEXT MATCH</span><strong>Coming soon</strong><small>Add fixtures from the private admin dashboard.</small></div></section>
-<section id='latest' class='latest'><div class='section-head'><p class='eyebrow'>LATEST FROM JIRRA</p><h2>STORIES. EVENTS.<br>MOMENTS.</h2></div><div id='posts' class='cards'></div></section>
-<section id='connect' class='connect'><p class='eyebrow'>STAY CONNECTED</p><h2>JIRRA.</h2><h3>WE ARE HERE.</h3><p>DMV → 🌎</p><div><a class='btn light' href='https://www.tiktok.com/@jirraa57?lang=en'>TikTok</a><a class='btn light' href='https://www.facebook.com/profile.php?id=61550865994941'>Facebook</a></div></section>
-</main><footer>© <span id='year'></span> JIRRA • DMV</footer><script src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2'></script><script src='config.js'></script><script src='supabase.js'></script><script src='app.js'></script></body></html>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <img
+                class="hero-media"
+                src="assets/hero.jpg"
+                alt="JIRRA community gathering"
+        >
+
+        <div class="hero-shade"></div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow hero-eyebrow">
+                DMV • OROMO COMMUNITY
+            </p>
+
+            <h1>
+                WE ARE<br>
+                <span>HERE.</span>
+            </h1>
+
+            <div class="hero-rotation">
+                <span id="rotating-word">CULTURE.</span>
+            </div>
+
+            <a class="hero-link" href="#story">
+                Discover JIRRA
+                <span>↓</span>
+            </a>
+
+        </div>
+
+        <div class="hero-side">
+            CULTURE&nbsp;&nbsp; COMMUNITY&nbsp;&nbsp; FOOTBALL
+        </div>
+
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>JIRRA • WE ARE HERE • CULTURE • COMMUNITY • FOOTBALL •&nbsp;</span>
+            <span>JIRRA • WE ARE HERE • CULTURE • COMMUNITY • FOOTBALL •&nbsp;</span>
+        </div>
+    </section>
+
+
+    <!-- STORY -->
+    <section id="story" class="story section">
+
+        <div class="section-number">01 / STORY</div>
+
+        <div class="story-content">
+
+            <p class="eyebrow red">
+                JIRRA / WE ARE HERE
+            </p>
+
+            <h2 class="reveal-text">
+                More than<br>
+                a name.
+            </h2>
+
+            <div class="story-statements">
+
+                <p>We celebrate <strong>our culture.</strong></p>
+                <p>We build <strong>community.</strong></p>
+                <p>We carry it <strong>forward.</strong></p>
+
+            </div>
+
+            <p class="story-description">
+                JIRRA is a DMV-based Oromo community bringing people
+                together through culture, friendship, celebration and football.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CULTURE -->
+    <section id="culture" class="culture section">
+
+        <div class="culture-heading">
+
+            <div class="section-number">02 / CULTURE</div>
+
+            <p class="eyebrow">ROOTED IN CULTURE</p>
+
+            <h2>
+                IRREECHAA<br>
+                <span>TOGETHER.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="editorial-gallery">
+
+            <figure class="gallery-main">
+                <img src="assets/culture-1.jpg" alt="JIRRA celebrating Irreechaa">
+            </figure>
+
+            <figure class="gallery-secondary gallery-top">
+                <img src="assets/culture-2.jpg" alt="JIRRA community at Irreechaa">
+            </figure>
+
+            <figure class="gallery-secondary gallery-bottom">
+                <img src="assets/culture-3.jpg" alt="Irreechaa gathering">
+            </figure>
+
+            <div class="gallery-caption">
+                <span>IRREECHAA</span>
+                <strong>DMV</strong>
+                <span>TOGETHER</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTBALL -->
+    <div class="football-ticker">
+        <div>
+            JIRRA FC • DMV • FOOTBALL • COMMUNITY • JIRRA FC • DMV • FOOTBALL • COMMUNITY •
+        </div>
+    </div>
+    <section id="football" class="football section">
+
+        <div class="football-copy">
+
+            <div class="section-number light-number">
+                03 / FOOTBALL
+            </div>
+
+            <p class="eyebrow red">JIRRA FC</p>
+
+            <h2>
+                FROM THE DMV<br>
+                <span>TO THE PITCH.</span>
+            </h2>
+
+            <p class="football-description">
+                Identity, competition and community.
+                Follow JIRRA FC through fixtures,
+                tournaments, results and stories from the pitch.
+            </p>
+
+        </div>
+
+
+        <div class="match-card">
+
+            <div class="match-label">
+                NEXT MATCH
+            </div>
+
+            <div class="match-content">
+                <span>JIRRA FC</span>
+
+                <strong>VS</strong>
+
+                <span>TBA</span>
+            </div>
+
+            <div class="match-footer">
+                Fixture announcement coming soon
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LATEST / SUPABASE -->
+    <section id="latest" class="latest section">
+
+        <div class="latest-heading">
+
+            <div class="section-number">
+                04 / LATEST
+            </div>
+
+            <p class="eyebrow">
+                LATEST FROM JIRRA
+            </p>
+
+            <h2>
+                STORIES.<br>
+                EVENTS.<br>
+                <span>MOMENTS.</span>
+            </h2>
+
+        </div>
+
+        <!-- app.js keeps populating this -->
+        <div id="posts" class="cards"></div>
+
+    </section>
+
+
+    <!-- CONNECT -->
+    <section id="connect" class="connect section">
+
+        <p class="eyebrow">
+            STAY CONNECTED
+        </p>
+
+        <h2>
+            JIRRA.
+        </h2>
+
+        <h3>
+            WE ARE HERE.
+        </h3>
+
+        <p class="location">
+            DMV → 🌎
+        </p>
+
+        <div class="social-links">
+
+            <a
+                    href="https://www.tiktok.com/@jirraa57?lang=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+            >
+                TikTok ↗
+            </a>
+
+            <a
+                    href="https://www.facebook.com/profile.php?id=61550865994941"
+                    target="_blank"
+                    rel="noopener noreferrer"
+            >
+                Facebook ↗
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+  <span>
+    © <span id="year"></span> JIRRA
+  </span>
+
+    <span>
+    DMV • WE ARE HERE
+  </span>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="supabase.js"></script>
+<script src="app.js"></script>
+
+<script>
+    /*
+     * Hero rotating statement
+     */
+    const rotatingWords = [
+        "CULTURE.",
+        "COMMUNITY.",
+        "FOOTBALL.",
+        "JIRRA."
+    ];
+
+    const rotatingWord = document.getElementById("rotating-word");
+
+    let wordIndex = 0;
+
+    setInterval(() => {
+
+        rotatingWord.classList.add("word-out");
+
+        setTimeout(() => {
+
+            wordIndex = (wordIndex + 1) % rotatingWords.length;
+
+            rotatingWord.textContent = rotatingWords[wordIndex];
+
+            rotatingWord.classList.remove("word-out");
+            rotatingWord.classList.add("word-in");
+
+            setTimeout(() => {
+                rotatingWord.classList.remove("word-in");
+            }, 500);
+
+        }, 400);
+
+    }, 2200);
+
+
+    /*
+     * Scroll reveal
+     */
+    const revealElements = document.querySelectorAll(
+        ".story-content, .culture-heading, .editorial-gallery, .football-copy, .match-card, .latest-heading, .cards"
+    );
+
+    const observer = new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    revealElements.forEach(element => {
+        element.classList.add("reveal");
+        observer.observe(element);
+    });
+</script>
+
+</body>
+</html>
